@@ -1,0 +1,108 @@
+.root {
+    -fx-background-color: #373435;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+}
+
+.text-field:hover, .text-field:focused {
+    -fx-border-color: orange;
+}
+
+.choice-box, .choice-box .context-menu {
+    -fx-background-color: #373435;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+    -fx-mark-color: orange;
+}
+
+.combo-box {
+    -fx-background-color: #373435;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+    -fx-mark-color: orange;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #373435;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell:hover {
+    -fx-text-fill: orange;
+}
+
+.combo-box .list-cell:focused {
+    -fx-text-fill: orange;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: orange;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: black;
+}
+
+.radio-button {
+    -fx-text-fill: white;
+}
+
+#saveBtn, #clearBtn, #addBtn, #deleteBtn, #updateBtn {
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: white;
+}
+
+#saveBtn:hover, #clearBtn:hover, #addBtn:hover, #deleteBtn:hover, #updateBtn:hover {
+    -fx-border-color: orange;
+}
+
+#saveBtn:pressed, #clearBtn:pressed, #addBtn:pressed, #deleteBtn:pressed, #updateBtn:pressed {
+    -fx-border-color: orange;
+    -fx-background-color: orange;
+    -fx-text-fill: black;
+}
+
+.table-view {
+    -fx-font-size: 1.1em;
+}
+
+.table-view, .table-view:focused, .table-view .column-header-background .label, .table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-view .column-header-background .label, .table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: orange;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
